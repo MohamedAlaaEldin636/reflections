@@ -1,25 +1,43 @@
 What happens when you initialize a repository? Why do you need to do it?
 
--> it makes empty repository,
-and i need to do it to be able to make commits in future
-to be able to track bugs and have different versions of my code
+	it makes empty repository,
+	and i need to do it to be able to make commits in future
+	to be able to track bugs and have different versions of my code
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
-it works as a medium which decides which files in the working directoy
-that can have commits which the repository will save
+	staging area works as a medium which decides which files in the working directoy
+	that can have commits which the repository will save
 
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+	by using git diff --staged 
+	as it shows the differecne between staging area and repository
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+	if for example i wanna make experimental change and i want to keep the master as it is
+	until check if new feature/exp-change worth it to be merged into master then i would use new branch
+
 How do the diagrams help you visualize the branch structure?
+
+	it helps showing changes done in branches and arranged according 
+	to date so you know which was before which
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+	we have a commit that has all changes from the two branches if there is no conflicts
+	and we present it as it operates-on commit as it takes two commits and make a new commit out of them
+
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+
+	auto-merging 
+	pros ==> it saves a lot of time and makes the new commit easily
+	cons ==> it cannot resolve conflicts and we have to do it ourselves
+	manually
+	exactly the opposite of auto

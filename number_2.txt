@@ -1,1 +1,1 @@
-not like what was written in nuber_1.txt file
+not like what was written in number_1.txt file
